@@ -1,0 +1,24 @@
+.header-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.item-inner{
+    
+}
+.th{
+    border: 1px solid #f2f2f1;
+}
+.nav-admin{
+    min-height: 1500px;
+    border-radius: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+    border: 0px;
+}
+.clear-bor{
+    border-radius: 0px !important;
+}
+.clear-padding{
+    padding: 0px !important;
+}

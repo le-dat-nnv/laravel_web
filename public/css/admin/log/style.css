@@ -1,0 +1,15 @@
+.container{
+    margin: 0px auto;
+}
+.center{
+    margin: 0px auto;
+    justify-content: center;
+}
+
+.list-group-item{
+    border-bottom: 0px !important;
+}
+#userError{
+    display: none;
+    margin: 0px !important;
+}
