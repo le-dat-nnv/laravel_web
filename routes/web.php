@@ -32,3 +32,5 @@ Route::get('/', [productController::class , 'get_form']);
 Route::get('login_admin_project_laravel', [UserAdmin::class , 'get_form']);
 Route::post('submit-form', [UserAdmin::class , 'check_form']);
 
+
+

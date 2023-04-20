@@ -63,13 +63,11 @@ return [
         'users' => [
             'driver' => 'eloquent',
             'model' => App\Models\User::class,
-        ],
-
-        // 'users' => [
-        //     'driver' => 'database',
-        //     'table' => 'users',
-        // ],
+            'table' => 'users',
+            'key' => 'id',
+        'username' => 'user', // Thêm dòng này và chỉnh sửa trường xác định người dùng thành 'user'
     ],
+],
 
     /*
     |--------------------------------------------------------------------------
