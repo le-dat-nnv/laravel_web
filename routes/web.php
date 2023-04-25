@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\homeController;
 use App\Http\Controllers\productController;
 use App\Http\Controllers\UserAdmin;
+use Modules\Products\Controllers\Products;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,5 +33,10 @@ Route::get('/', [productController::class , 'get_form']);
 Route::get('login_admin_project_laravel', [UserAdmin::class , 'get_form']);
 Route::post('submit-form', [UserAdmin::class , 'check_form']);
 
-
-
+Route::get('check-module-registration/Products', function () {
+    if (!app()->getProvider("Modules\\ModuleServiceProvider")) {
+        return "Module  has not been registered! chưa được đăng ký";
+    } else {
+        return "Module  is registered.";
+    }
+});
