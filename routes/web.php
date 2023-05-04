@@ -40,3 +40,8 @@ Route::get('check-module-registration/Products', function () {
         return "Module  is registered.";
     }
 });
+
+Route::post('path/to/delete', [productController::class , 'delete_form']);
+
+Route::get('/test', [productController::class , 'test']);
+
